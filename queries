@@ -1,0 +1,13 @@
+CREATE DATABASE bolsa_empleo;
+
+USE bolsa_empleo;
+
+CREATE TABLE aspirantes (
+    cedula VARCHAR(20) PRIMARY KEY,
+    nombre VARCHAR(100),
+    edad INT,
+    experiencia INT,
+    profesion VARCHAR(100),
+    telefono VARCHAR(20),
+    contratado BOOLEAN DEFAULT FALSE
+);
